@@ -196,4 +196,46 @@ header .form i {
     font-size: 14px;
     line-height: 2;
 }
+.landing .change-background {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ddd;
+}
+.landing .fa-angle-left {
+    left: 15px;
+}
+.landing .fa-angle-right {
+    right: 15px;
+}
+.landing .bullets {
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+.landing .bullets li {
+    width: 20px;
+    height: 20px;
+    border: #ddd solid 1px;
+    background-color: transparent;
+    border-radius: 50%;
+}
+.landing .bullets li:nth-child(2) {
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+}
+@media (max-width: 767px) {
+    .landing .text {
+        width: 100%;
+    }
+    .landing .text .content {
+        max-width: 100%;
+    }
+    .landing .change-background {
+        display: none;
+    }
+}
 /* End landing  */
