@@ -147,6 +147,7 @@ header nav ul {
 
     header nav .toggle-menu {
         position: relative;
+        color: #ddd;
     }
 
     header nav .toggle-menu:hover + ul {
@@ -273,6 +274,19 @@ header .form i {
 @media (max-width: 767px) {
     .landing .text {
         width: 100%;
+    }
+    .landing .text .content {
+        max-width: 100%;
+    }
+    .landing .change-background {
+        display: none;
+    }
+}
+@media (max-height: 600px) {
+    .landing .text {
+        width: 100%;
+        padding: 14px;
+        transform: translateY(-38%);
     }
     .landing .text .content {
         max-width: 100%;
