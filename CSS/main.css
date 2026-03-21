@@ -235,6 +235,7 @@ header .form i {
     font-weight: normal;
     line-height: 1.5;
     margin-bottom: 20px;
+    text-transform: uppercase;
 }
 .landing .text .content p {
     font-size: 14px;
@@ -336,3 +337,66 @@ header .form i {
     }
 }
 /* End Services */
+
+/* Start Design */
+.Design {
+    padding: var(--section-padding) 0;
+    height: 600px;
+    position: relative;
+    background-image: url(/images/design.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.Design::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 60%);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+.Design .image,
+.Design .text {
+    position: relative;
+    z-index: 2;
+    flex: 1;
+}
+.Design .image {
+    text-align: center;
+}
+.Design .image img {
+    position: relative;
+    bottom: -150px;
+}
+.Design .text {
+    color: white;
+    padding: 50px;
+    background-color: var(--transparent-color);
+}
+.Design .text h2 {
+    font-size: 32px;
+    font-weight: normal;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.Design .text ul li {
+    padding: 15px 0;
+}
+.Design .text ul li::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\e163";
+    font-weight: 900;
+    margin-right: 20px;
+    position: relative;
+    top: 1px;
+}
+@media (max-width: 767px) {
+    .Design .image {
+        display: none;
+    }
+}
+/* End Design */
