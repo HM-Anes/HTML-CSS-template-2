@@ -203,7 +203,7 @@ header .form i {
 /* Start landing  */
 .landing {
     position: relative;
-    background-image: url(/images/landing.jpg);
+    background-image: url(../images/landing.jpg);
     height: 100vh;
     background-size: cover;
 }
@@ -343,7 +343,7 @@ header .form i {
     padding: var(--section-padding) 0;
     height: 600px;
     position: relative;
-    background-image: url(/images/design.jpg);
+    background-image: url(../images/design.jpg);
     background-size: cover;
     display: flex;
     align-items: center;
